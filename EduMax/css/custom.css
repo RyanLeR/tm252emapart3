@@ -1,13 +1,43 @@
-.header {
+header {
+    width: 100vw;
     background-color: #3c9fc3;
     color: white;
+}
+
+.admin-user-text {
+    color: #fff;
+    }
+
+.admin-user-text-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }
+
+.header-container {
+    width: 100vw;
+    margin: 0px;
+}
+.header-mid-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-adminview-text {
+   
+}
+.header-img {
+    height: 100%;
 }
 
 h1.header {
     font-size: 9vw;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     color: #7bd5d5;
 }
 
@@ -18,12 +48,3 @@ form.register {
     padding: 15px;
 }
 
-.img {
-    width: 30px;
-    height: 30px;
-}
-
-.img:hover {
-    width: 125px;
-    height: 125px;
-}

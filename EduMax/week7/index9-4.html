@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EduMax - Home</title><!-- Edit for each new page created from this template -->
+    <meta name="author" content="TM252 Module Team">
+    <meta name="description" content="An online learning resource by students for students">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"><!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="./css/custom.css"><!-- Custom stylesheet - linked after Bootstrap so that entries here take precedence and override Bootstrap's style -->
+</head>
+<body>
+    <!-- Fixed-width container. This container's max-width will change at different breakpoints -->
+    <div class="container">
+        <header class="header">
+            <!--header content to go here-->
+            <!-- Row 1 -->
+            <div class="row">
+                <div class="col">
+                    <!-- logo -->
+                    <img src="./images/EduMax_logo.png" alt="EduMax logo" class="img-fluid">
+                </div>
+                <div class="col">
+                    <!-- site name -->
+                    <h1 class="header">EduMax</h1>
+                </div>
+                <div class="col text-end">
+                    <!-- login button -->
+                    <a class="btn btn-primary m-2" href="./pages/registration.html" role="button">Login</a>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row g-0 bg-dark">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg p-2" data-bs-theme="dark">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="navbar-nav">
+                            <!-- main navigation -->
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="./pages/placeholder.html">News</a>
+                                <a class="nav-link" href="./pages/placeholder.html">Taster Modules</a>
+                                <a class="nav-link" href="./pages/placeholder.html">Membership</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col">
+                    <!-- search box -->
+                    <form class="d-flex p-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- Row 3 -->
+        <div class="row mt-2 ms-0">
+            <div class="col">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <!-- breadcrumbs -->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <main>
+            <!-- page-specific content in sections -->
+            <!-- Row 4 -->
+            <div class="row ms-0">
+                <div class="container col-md-6">
+                    <section>
+                        <!-- Selection controls -->
+                        <h2 class="text-center">Browse our catalogue</h2>
+                        <form>
+                            <div class="row p-2">
+                                <div class="col">
+                                    <label for="area" class="form-label">Area of study</label>
+                                </div>
+                                <div class="col">
+                                    <select id="area" name="area" class="form-select form-select-lg" aria-label="Select from a list of study areas">
+                                        <option selected="">-- Choose one --</option>
+                                        <option value="cybersecurity">Cyber Security</option>
+                                        <option value="projectmanagement">Project Management</option>
+                                        <option value="webtech">Web Technologies</option>
+                                        <option value="databasemanagement">Database Management</option>
+                                        <option value="networking">Network Management</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <div class="col">
+                                    <label for="level" class="form-label">Level of study</label>
+                                </div>
+                                <div class="col">
+                                    <select id="level" name="level" class="form-select form-select-lg" aria-label="Select from a list of study levels">
+                                        <option selected="">-- Choose one --</option>
+                                        <option value="beginner">Beginner</option>
+                                        <option value="intermediate">Intermediate</option>
+                                        <option value="advanced">Advanced</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Output from form completion will appear here. Placeholder text shown -->
+                        <h3>Module AB101 (free)</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sequi. Inventore, reprehenderit maiores sapiente consequuntur iusto sed vitae, voluptatibus repellat itaque alias deleniti quo distinctio delectus temporibus porro ab id!</p>
+                        <h3>Module CD202 (members)</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sequi. Inventore, reprehenderit maiores sapiente consequuntur iusto sed vitae, voluptatibus repellat itaque alias deleniti quo distinctio delectus temporibus porro ab id!</p>
+                    </section>
+                </div>
+                <div class="col m-2">
+                    <section>
+                        <!--content to go here-->
+                        <h2 class="text-center">Latest news</h2>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="./images/news.png" class="img-fluid" alt="An image illustrating the news item">
+                            </div>
+                            <div class="col">
+                                <h3>A subtitle</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, debitis quae facilis facere ipsum aperiam. Voluptates aliquam nihil iure ipsa unde omnis temporibus magni? Consequatur voluptatem adipisci reiciendis est exercitationem.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="./images/news.png" class="img-fluid" alt="An image illustrating the news item">
+                            </div>
+                            <div class="col">
+                                <h3>A subtitle</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, debitis quae facilis facere ipsum aperiam. Voluptates aliquam nihil iure ipsa unde omnis temporibus magni? Consequatur voluptatem adipisci reiciendis est exercitationem.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="./images/news.png" class="img-fluid" alt="An image illustrating the news item">
+                            </div>
+                            <div class="col">
+                                <h3>A subtitle</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, debitis quae facilis facere ipsum aperiam. Voluptates aliquam nihil iure ipsa unde omnis temporibus magni? Consequatur voluptatem adipisci reiciendis est exercitationem.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- Row 5 -->
+            <div class="row me-0">
+                <div class="col">
+                    <nav class="nav">
+                        <!-- secondary navigation to go here -->
+                        <a class="nav-link" href="./placeholder.html">Privacy</a>
+                        <a class="nav-link" href="./placeholder.html">About Us</a>
+                        <a class="nav-link" href="./placeholder.html">Support</a>
+                    </nav>
+                </div>
+                <div class="col text-end">
+                    <!-- copyright notice -->
+                    <p>&copy; EduMax 2024</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap JavaScript -->
+</body>
+</html>
