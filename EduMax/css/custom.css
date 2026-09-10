@@ -1,6 +1,6 @@
 /*Accessible font as per Edube CSS lessons at https://edube.org/10003840/learn/wde2-v1-il/adjusting-contrast-and-font-size-1?action=page#using-rem-for-font-sizes*/
 body {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -39,21 +39,24 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 /* STILL TO GIVE THE SOURCE FROM EDUBE /RE DISPLAY: NONE */
 .hidden-field {
     display: none;
 }
+
 .nav-col {
     display: flex;
     justify-content: right;
-    margin-right: 5rem
+    margin-right: 5rem;
+    align-items: center;  
 }
 
 .header-img {
     height: 100%;
 }
 
-h1.header {
+h1.header-adminview-text {
     font-size: 9vw;
 }
 
@@ -78,7 +81,36 @@ form.register {
     .admin-user-text-col {
         margin: 2rem 0rem
     }
+
+    .nav-col {
+    display: flex;
+    justify-content: right;
+    margin-right: 3rem;
+    align-items: center;  
+    }
+
+    h1.header-adminview-text {
+        font-size: 1.5rem;
+    }
 }
+
+@media screen and (max-width: 820px) {
+    .admin-user-text-col {
+        margin: 2rem 0rem
+    }
+
+    .nav-col {
+    display: flex;
+    justify-content: right;
+    margin-right: 3rem;
+    align-items: center;  
+    }
+
+    h1.header-adminview-text {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 
