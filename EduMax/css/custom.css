@@ -1,32 +1,54 @@
+/*Accessible font as per Edube CSS lessons at https://edube.org/10003840/learn/wde2-v1-il/adjusting-contrast-and-font-size-1?action=page#using-rem-for-font-sizes*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
 header {
     width: 100vw;
-    background-color: #3c9fc3;
+    background-color: #196c8a;
     color: white;
 }
 
 .admin-user-text {
-    color: #fff;
-    }
+    color: #ffffff;
+}
 
 .admin-user-text-col {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 1rem;
-    }
+
+    color: #ffffff;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.col-img {
+    width: 32px
+}
 
 .header-container {
     width: 100vw;
     margin: 0px;
 }
+
 .header-mid-col {
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header-adminview-text {
-   
+/* STILL TO GIVE THE SOURCE FROM EDUBE /RE DISPLAY: NONE */
+.hidden-field {
+    display: none;
 }
+.nav-col {
+    display: flex;
+    justify-content: right;
+    margin-right: 5rem
+}
+
 .header-img {
     height: 100%;
 }
@@ -41,6 +63,10 @@ h4 {
     color: #7bd5d5;
 }
 
+.header-adminview-text {
+    color: #ffffff;
+}
+
 form.register {
     border: 1px solid #3c9fc3;
     background-color: lightgrey;
@@ -48,3 +74,37 @@ form.register {
     padding: 15px;
 }
 
+@media screen and (max-width: 600px) {
+    .admin-user-text-col {
+        margin: 2rem 0rem
+    }
+}
+
+
+
+
+.announcement-container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.anncmt-cont {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute space between nav items */
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.anncmt-col {
+    color: #000000;
+    margin: 5px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        /* Stack nav items vertically on smaller screens */
+    }
+}

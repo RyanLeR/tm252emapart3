@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TM252 Admin View</title>
+    <meta name="author" content="Ryan Le Roux">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <div class="col">
+                    <!-- logo -->
+                    <img src="../images/EduMax_logo.png" alt="EduMax logo" class="img-fluid header-img">
+                </div>
+                <div class="col header-mid-col">
+                    <!-- site name -->
+                    <h1 class="header-adminview-text">EduMax Admin View</h1>
+
+                </div>
+                <div class="col text-end admin-user-text-col">
+
+                    <div class="col nav-col">
+                        <div>
+                            <img src="../images/bell.png" class="col-img">
+                        </div>
+
+                        <img src="../images/question-mark.png" class="col-img">
+                        <h5 class="admin-user-text">Admin User</h5>
+
+                    </div>
+
+                </div>
+        </nav>
+
+    </header>
+    <section id="announcement-section">
+        <div class="anncmt-cont">
+            <div class="anncmt-col"></div>
+            <div class="anncmt-col">
+                <h1>Create an annocement</h1>
+                <form action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Announcement title:</label>
+                        <br>
+                        <input type="text" class="form-control" id="name" name="anncmt-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Announcement message</label>
+                        <br>
+                        <textarea id="message" class="form-control" name="anncmt-body" required></textarea>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="hidden-field" name="item_ID" value="30001000-5000-654321fedcba">
+                    </div>
+                </form>
+
+            </div>
+            <div class="anncmt-col"></div>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <form action="submit-form.php" method="POST">
+        <!-- Form elements/fields go here -->
+    </form>
+
+</body>
+
+</html>
