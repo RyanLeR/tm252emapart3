@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Ryan Le Roux">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking to local bootstrap files to allow for bootstrap styling. Explain in Edube/OpenEDG lessons CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/custom.css">
 </head>
@@ -13,6 +14,7 @@
 <body>
     <header>
         <nav>
+            <!--col class here to allow bootstrap styling. Explain in Edube/OpenEDG lessons CSS-->
             <div class="row header-row">
                 <div class="col">
                     
@@ -33,6 +35,7 @@
                         <h2 class="admin-user-text">Admin User</h2>
 
                     </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -41,18 +44,58 @@
             <div class="anncmt-cont">
                 
                 <div class="anncmt-col">
-                    <h1>Create an annocement</h1>
-                    <form action="https://students.open.ac.uk/ mct/ tm252/ reflect/ reflect.php" method="POST">
+                    <h1 class="anncmt-h1">Create an annocement</h1>
+                    <!--Implementing reflector as required in Part 3a-->
+                    <form action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method="POST">
                         <div class="form-group">
-                            <label for="name">Announcement title:</label>
+                            <label for="name">Announcement subject:</label>
                             <br>
-                            <input type="text" class="form-control" id="name" name="anncmt-title" required>
+                            <input type="text" class="form-control" id="name" name="anncmt-title" placeholder="e.g. New course material coming soon" required>
+                        </div>
+                        <!--form group here and in following form groups to allow bootstrap styling. Explain in Edube/OpenEDG lessons CSS-->
+                        <div class="form-group">
+                            <label for="sender-name">Sender name:</label>
+                            <br>
+                            <textarea id="sender-name" class="form-control form-control-body anncmt-body" name="anncmt-body" placeholder="e.g. Jane Smith" required></textarea>
+                            <br>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sender-role">Sender role:</label>
+                            <br>
+                            <textarea id="sender-role" class="form-control form-control-body anncmt-body" name="anncmt-body" placeholder="e.g. Head course curator" required></textarea>
+                            <br>
                         </div>
                         <div class="form-group">
-                            <label for="message">Announcement message:</label>
+                            <label for="attachment">Attachment:</label>
                             <br>
-                            <textarea id="message" class="form-control form-control-body anncmt-body" name="anncmt-body" required></textarea>
+                            <textarea id="attachment" class="form-control form-control-body anncmt-body" name="anncmt-body" placeholder="e.g. Q2_time_table.xlsx" required></textarea>
                             <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="anncmt-date">Announcement date:</label>
+                            <br>
+                            <input type="date" class="form-control" id="anncmt-date" name="anncmt-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="anncmt-time">Announcement time:</label>
+                            <br>
+                            <input type="time" class="form-control" id="anncmt-time" name="anncmt-time" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Priority:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="anncmt-priority" id="priority-low" value="low">
+                                <label class="form-check-label" for="priority-low">Low</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="anncmt-priority" id="priority-medium" value="medium">
+                                <label class="form-check-label" for="priority-medium">Medium</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="anncmt-priority" id="priority-high" value="high">
+                                <label class="form-check-label" for="priority-high">High</label>
+                            </div>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="hidden-field" name="item_ID" value="30001000-5000-654321fedcba">

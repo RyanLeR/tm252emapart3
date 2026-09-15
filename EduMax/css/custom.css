@@ -65,6 +65,9 @@ h2, h3, h4 {
     color: #ffffff;
 }
 
+.anncmt-h1 {
+        margin-bottom: 6rem;
+    }
 
 form.register {
     border: 1px solid #3c9fc3;
@@ -99,11 +102,6 @@ form.register {
     padding: 10px;
 }
 
-.anncmt-body {
-    margin-bottom: 200px;
-}
-
-
 @media screen and (max-width: 600px) {
    
 
@@ -128,6 +126,9 @@ form.register {
     .col-img {
         width: 50%;
         height: 50%;
+    }
+    .anncmt-h1 {
+        margin-bottom: 2rem;
     }
 }
 
@@ -156,6 +157,10 @@ form.register {
     }
     
     .admin-user-text {
-    height: 100%;
-}
+        height: 100%;
+    }
+
+    .anncmt-h1 {
+        margin-bottom: 2rem;
+    }
 }
