@@ -88,7 +88,7 @@ form.register {
 
 .anncmt-cont {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #ffffff;
     padding: 10px;
 }
@@ -105,9 +105,7 @@ form.register {
 
 
 @media screen and (max-width: 600px) {
-    .anncmt-cont  {
-        display: block;
-    }
+   
 
     .anncmt-col {
         display: inline-block;
